@@ -4,10 +4,10 @@ git clone "https://github.com/sihengc/tensorflow"
 git checkout -b tmp_folder  # create new
 git checkout tmp_folder     # convert from master to tmp_folder
 git add git_instruction.txt
-git commit -m ""
+git commit -m "Add git_instruction.txt"
 git push -u origin tmp_folder
 git branch
-
-
-
+git stash save git_instruction.txt
+git checkout master 
 git merge tmp_folder
+git push
